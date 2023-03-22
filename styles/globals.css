@@ -39,11 +39,11 @@ html {
 
   h1:hover span:nth-child(1){
     margin-left: 5px;
-
+    margin-right: 5px;
   }
   h1:hover span:nth-child(2){
     margin-left: 5px;
-
+    margin-right: 5px;
   }
 
   h1:hover span {

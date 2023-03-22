@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 function SocialLink({ url, children }: { url: string; children: ReactNode}){
     return(
       <a
-        className='p-6 duration-300 ease-in rounded-full shadow-sm cursor-pointer shadow-gray-300 hover:scale-110'
+        className='p-6 duration-300 ease-in rounded-full shadow-sm cursor-pointer shadow-gray-300 hover:scale-110 hover:shadow-[#0891b2] hover:shadow-md'
         target="_blank" 
         rel="noreferrer" 
         href={url}>
@@ -21,7 +21,7 @@ function SocialLink({ url, children }: { url: string; children: ReactNode}){
 export function SocialContent (){
     return (
 
-<div className='flex items-center justify-between max-w-[330px] m-auto py-4 mt-12'>
+<div className='flex items-center justify-between max-w-[330px] m-auto py-4m'>
 <SocialLink
   url='https://www.linkedin.com/in/diegogamboaq/'
 >
