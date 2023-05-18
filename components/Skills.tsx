@@ -1,5 +1,6 @@
 // import Image from 'next/image';
 // import { Image } from './images/image/imagen.component';
+// import { Card } from './cards';
 import React from 'react';
 import Html from '../public/assets/skills/html.png';
 import Css from '../public/assets/skills/css.png';
@@ -8,7 +9,6 @@ import ReactImg from '../public/assets/skills/react.png';
 import Tailwind from '../public/assets/skills/tailwind.png';
 import Github from '../public/assets/skills/github1.png';
 import NextJS from '../public/assets/skills/nextjs.png'
-import { Card } from './cards';
 import ImageNext from 'next/image';
 
 
@@ -20,10 +20,10 @@ export function Skills() {
           Skills
         </p>
         <h2 className="py-4">What I Can Do</h2>
-        <div className="grid grid-cols-1 gap-8 mt-3 lg:grid-cols-4 md:grid-cols-3">
+        <div className="grid grid-cols-2 gap-8 m-3 mt-3 lg:grid-cols-4 md:grid-cols-3">
 
-          <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
-            <div className="grid items-center justify-center grid-cols-2 gap-4">
+          <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">   
+            <div className="grid items-center justify-center grid-cols-2 gap-4">             
               <div className="m-auto">
                 <ImageNext
                   src={Html}
@@ -31,7 +31,6 @@ export function Skills() {
                   height={38}
                   alt="/"
                 />
-
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3 className="text-xs md:text-base">HTML</h3>
@@ -48,7 +47,6 @@ export function Skills() {
                   height={38}
                   alt="/"
                 />
-
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
@@ -71,6 +69,7 @@ export function Skills() {
               </div>
             </div>
           </div>
+          
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
@@ -132,6 +131,7 @@ export function Skills() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

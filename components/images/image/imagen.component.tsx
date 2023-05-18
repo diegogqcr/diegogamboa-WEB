@@ -10,7 +10,6 @@ export function Image({
   height,
   width,
   alt,
-
 }: ImageProps) {
   const [image, setImage] = useState(src || defaultImage)
   return (
