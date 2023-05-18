@@ -1,4 +1,5 @@
-import Image from 'next/image';
+// import Image from 'next/image';
+// import { Image } from './images/image/imagen.component';
 import React from 'react';
 import Html from '../public/assets/skills/html.png';
 import Css from '../public/assets/skills/css.png';
@@ -7,9 +8,11 @@ import ReactImg from '../public/assets/skills/react.png';
 import Tailwind from '../public/assets/skills/tailwind.png';
 import Github from '../public/assets/skills/github1.png';
 import NextJS from '../public/assets/skills/nextjs.png'
+import { Card } from './cards';
+import ImageNext from 'next/image';
 
 
-export function Skills (){
+export function Skills() {
   return (
     <div id="skills" className="w-full p-2 lg:h-screen">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
@@ -17,75 +20,112 @@ export function Skills (){
           Skills
         </p>
         <h2 className="py-4">What I Can Do</h2>
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 mt-3 lg:grid-cols-4 md:grid-cols-3">
+
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
-                <Image 
-                src={Html} 
-                width={64} 
-                height={64} 
-                alt="/" />
+                <ImageNext
+                  src={Html}
+                  width={38}
+                  height={38}
+                  alt="/"
+                />
+
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
+                <h3 className="text-xs md:text-base">HTML</h3>
               </div>
             </div>
           </div>
+
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
-                <Image src={Css} width={64} height={64} alt="/" />
+                <ImageNext
+                  src={Css}
+                  width={38}
+                  height={38}
+                  alt="/"
+                />
+
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
               </div>
             </div>
           </div>
+
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
-                <Image src={Javascript} width={64} height={64} alt="/" />
+                <ImageNext
+                  src={Javascript}
+                  width={38}
+                  height={38}
+                  alt="/"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>JavaScript</h3>
+                <h3 className="text-xs md:text-base">JavaScript</h3>
               </div>
             </div>
           </div>
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
-                <Image src={ReactImg} width={64} height={64} alt="/" />
+                <ImageNext 
+                src={ReactImg} 
+                width={38} 
+                height={38} 
+                alt="/" 
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>React</h3>
               </div>
             </div>
           </div>
+          
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
-                <Image src={Tailwind} width={64} height={64} alt="/" />
+                <ImageNext
+                  src={Tailwind} 
+                  width={38} 
+                  height={38} 
+                  alt="/" 
+                  />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Tailwind</h3>
               </div>
             </div>
           </div>
+          
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
-                <Image src={Github} width={64} height={64} alt="/" />
+                <ImageNext 
+                src={Github} 
+                width={38} 
+                height={38} alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Github</h3>
               </div>
             </div>
           </div>
+          
           <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
-                <Image src={NextJS} width={64} height={64} alt="/" />
+                <ImageNext 
+                src={NextJS} 
+                width={38} 
+                height={38} 
+                alt="/" 
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Next</h3>
