@@ -3,17 +3,6 @@ import { SocialContent } from './SocialContent';
 
 
 export function Main() {
-  const url = 'https://graph.facebook.com/v7.0/6625157610839741?access_token=EAADb0YwdLH4BOyEUPYUHtWTFEbtcmDA9hLuyB0INqnBlc9cOw95h7oBh3sBOuT9KTVml1wXvUyHHKOp4CL6KXQyTKUoEcJMDwaVslqmrlg3hIlXh5xO3oWfUcjMjVWRx73Mi1f1ysAuAjjHy8s6WL6q52iEGOfDv5uAVpTgNUDe5v21mWGAFynuiyZA1ef4FWdR1YPFZBwrMEVXFwYf4DS820JbiVRAgsl9AabcIrK0JcENgyZAoUYnZAZCc3fAZDZD';
-  const [todos, setTodos] = useState();
-  const fetchApi = async () => {
-    const response = await fetch(url)
-    const responseJSON = await response.json()
-    setTodos(responseJSON)
-  }
-  useEffect(() => {
-    fetchApi()
-  }, [])
-console.log(todos)
   return (
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] min-h-[90%] w-full mx-auto p-2 flex justify-center items-center'>
