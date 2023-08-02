@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 // import { Image } from './images/image/imagen.component';
-// import { Card } from './cards';
+import { Card } from './cards';
 import React from 'react';
 import Html from '../public/assets/skills/html.png';
 import Css from '../public/assets/skills/css.png';
